@@ -120,55 +120,43 @@ imaging_parameters_nondefault = {
                                'scales': [0,3,9,27],
                               },
        #12M of band 3
-    'G353.41_B3_12M_robust-2': {'threshold': '0.5mJy', # 2*RMS
+    'G353.41_B3_12M_robust-2': {'threshold': {0:'0.50mJy', 1:'0.50mJy', 2:'0.50mJy'}, 
                              'scales': [0,3,9,27],
                             },
-    'G353.41_B3_12M_robust0': {'threshold': '0.36mJy', # 2*RMS
+    'G353.41_B3_12M_robust0': {'threshold': {0:'0.36mJy', 1:'0.36mJy', 2:'0.36mJy'}, 
                              'scales': [0,3,9,27],
                             },
-    #'G353.41_B3_12M_robust0.5': {'threshold': '0.26mJy', # 2*RMS
-    #                         'scales': [0,3,9,27],
-    #                        },
-    'G353.41_B3_12M_robust2': {'threshold': '0.28mJy', # 2*RMS
+    'G353.41_B3_12M_robust2': {'threshold': {0:'0.28mJy', 1:'0.28mJy', 2:'0.28mJy'}, 
                              'scales': [0,3,9,27],
                             },
     #7M12M of band 3
-    'G353.41_B3_7M12M_robust-2': {'threshold': '0.52mJy', # 2*RMS
+    'G353.41_B3_7M12M_robust-2': {'threshold': {0:'0.62mJy', 1:'0.62mJy', 2:'0.62mJy'},
                              'scales': [0,3,9,27],
                             },
-    'G353.41_B3_7M12M_robust0': {'threshold': '0.4mJy', # 2*RMS
+    'G353.41_B3_7M12M_robust0': {'threshold': {0:'0.49mJy', 1:'0.49mJy', 2:'0.49mJy'},
                              'scales': [0,3,9,27],
                             },
-    #'G353.41_B3_7M12M_robust0.5': {'threshold': '0.36mJy', # 2*RMS
-    #                         'scales': [0,3,9,27],
-    #                        },
-    'G353.41_B3_7M12M_robust2': {'threshold': '0.42mJy', # 2*RMS
+    'G353.41_B3_7M12M_robust2': {'threshold': {0:'0.58mJy', 1:'0.58mJy', 2:'0.58mJy'},
                              'scales': [0,3,9,27],
                             },
     #12M of band 6
-    'G353.41_B6_12M_robust-2': {'threshold': '1.4mJy', # 2*RMS
+    'G353.41_B6_12M_robust-2': {'threshold': {0:'1.43mJy', 1:'1.43mJy', 2:'1.43mJy'},
                              'scales': [0,3,9],
                             },
-    'G353.41_B6_12M_robust0': {'threshold': '1.04mJy', # 2*RMS
+    'G353.41_B6_12M_robust0': {'threshold': {0:'1.07mJy', 1:'1.07mJy', 2:'1.07mJy'},
                              'scales': [0,3,9],
                             },
-    #'G353.41_B6_12M_robust0.5': {'threshold': '0.74mJy', # 2*RMS
-    #                         'scales': [0,3,9],
-    #                        },
-    'G353.41_B6_12M_robust2': {'threshold': '0.74mJy', # 2*RMS
+    'G353.41_B6_12M_robust2': {'threshold': {0:'0.77mJy', 1:'0.77mJy', 2:'0.77mJy'},
                              'scales': [0,3,9],
                             },
     #7M12M of band 6
-    'G353.41_B6_7M12M_robust-2': {'threshold': '1.4mJy', # 2*RMS
+    'G353.41_B6_7M12M_robust-2': {'threshold': {0:'0.85mJy', 1:'0.85mJy', 2:'0.85mJy'},
                              'scales': [0,3,9],
                             },
-    'G353.41_B6_7M12M_robust0': {'threshold': '1.06mJy', # 2*RMS
+    'G353.41_B6_7M12M_robust0': {'threshold': {0:'0.82mJy', 1:'0.82mJy', 2:'0.82mJy'},
                              'scales': [0,3,9],
                             },
-    #'G353.41_B6_7M12M_robust0.5': {'threshold': '0.8mJy', # 2*RMS
-    #                         'scales': [0,3,9],
-    #                        },
-    'G353.41_B6_7M12M_robust2': {'threshold': '0.82mJy', # 2*RMS
+    'G353.41_B6_7M12M_robust2': {'threshold': {0:'1.19mJy', 1:'1.19mJy', 2:'1.19mJy'},
                              'scales': [0,3,9],
                             },
 
@@ -293,38 +281,6 @@ selfcal_pars['G333.60_B6_12M_robust2'][5] = {'solint': 'inf',
                                              'gaintype': 'G',
                                              'calmode': 'ap',
                                             }
-selfcal_pars['G353.41_B6_12M_robust0'][5] = {'solint': 'inf',
-                                           'gaintype': 'G',
-                                           'calmode': 'ap',
-                                          }
-selfcal_pars['G353.41_B6_12M_robust0'][6] = {'solint': 'inf',
-                                           'gaintype': 'G',
-                                           'calmode': 'ap',
-                                          }
-selfcal_pars['G353.41_B3_12M_robust0'][5] = {'solint': 'inf',
-                                           'gaintype': 'G',
-                                           'calmode': 'ap',
-                                          }
-selfcal_pars['G353.41_B3_12M_robust0'][6] = {'solint': 'inf',
-                                           'gaintype': 'G',
-                                           'calmode': 'ap',
-                                          }
-selfcal_pars['G353.41_B6_7M12M_robust0'][5] = {'solint': 'inf',
-                                           'gaintype': 'G',
-                                           'calmode': 'ap',
-                                          }
-selfcal_pars['G353.41_B6_7M12M_robust0'][6] = {'solint': 'inf',
-                                           'gaintype': 'G',
-                                           'calmode': 'ap',
-                                          }
-selfcal_pars['G353.41_B3_7M12M_robust0'][5] = {'solint': 'inf',
-                                           'gaintype': 'G',
-                                           'calmode': 'ap',
-                                          }
-selfcal_pars['G353.41_B3_7M12M_robust0'][6] = {'solint': 'inf',
-                                           'gaintype': 'G',
-                                           'calmode': 'ap',
-                                          }
 selfcal_pars['G338.93_B3_12M_robust0'][1] = {'solint': 'inf',
                                             'gaintype': 'T',
                                             'calmode': 'p',
